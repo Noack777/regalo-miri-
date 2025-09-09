@@ -41,10 +41,8 @@ body {
 }
 
 .tree-container {
-  /* Asegura que el contenedor tenga el nuevo tamaño */
   width: 520px !important;
   height: 520px !important;
-  /* Centrado absoluto */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -89,7 +87,6 @@ body {
   background: rgba(255,255,255,0.92);
   border-radius: 0.7em;
   box-shadow: 0 2px 16px #e6002611;
-  /* Permite que la caja crezca en altura y ancho */
   transition: max-width 0.4s, min-width 0.4s, width 0.4s;
 }
 
@@ -122,11 +119,7 @@ body {
 }
 
 .signature {
-  /* Cambia posición absoluta a relativa y pon margen arriba */
   position: relative;
-  top: auto;
-  left: auto;
-  bottom: auto;
   margin-top: 1.5em;
   margin-left: 0;
   display: block;
@@ -177,20 +170,69 @@ body {
   transform: translateX(-50%) translateY(0);
 }
 
-/* Responsivo para móviles: la caja ocupa casi todo el ancho arriba del árbol */
+/* Responsivo para móviles */
+@media (max-width: 1000px) {
+  #center-text {
+    font-size: 3rem;
+  }
+
+  .tree-container {
+    width: 400px;
+    height: 400px;
+  }
+
+  .dedication-text {
+    font-size: 1.2rem;
+    min-width: 250px;
+    max-width: 90vw;
+    width: 90vw;
+  }
+
+  .signature {
+    font-size: 1.6rem;
+  }
+
+  .countdown {
+    font-size: 1.3rem;
+    padding: 0.3em 0.8em;
+  }
+}
+
 @media (max-width: 700px) {
   .dedication-text {
     left: 50%;
-    right: auto;
-    top: 8%;
-    transform: translateX(-50%) translateY(0);
-    min-width: 0;
-    max-width: 95vw;
-    width: 95vw;
-    font-size: 1.1rem;
-    padding: 0.7em 0.7em 0.7em 0.7em;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    padding: 0.5em;
   }
+
   .signature {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  .tree-container {
+    width: 320px;
+    height: 320px;
+  }
+
+  #center-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .dedication-text {
+    font-size: 0.9rem;
+    max-width: 90vw;
+    width: 90vw;
+  }
+
+  .signature {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    font-size: 1.1rem;
+    min-width: 180px;
   }
 }
