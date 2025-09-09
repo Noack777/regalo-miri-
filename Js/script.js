@@ -70,15 +70,13 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-   text = `Para Yeimi el amor de mi vida:
+   text = `Miri (UwU)/
 
-Desde el primer momento supe que eras tú. Tu sonrisa, tu voz,tus outfits, tu forma de ser… todo en ti me hace sentir mi lugar seguro.
+Hoy es un día muy especial, porque celebramos el regalo más hermoso ciudad de México me ha dado: Asies, estoy hablando de ti, no te hagas. 
 
-Gracias por acompañarme en cada paso, por entenderme incluso en silencio, y por llenar mis días de amor.
+Cada dia que paso contigo es un capítulo nuevo en nuestra historia, lleno de risas, sueños, funas y momentos que atesoro con todo mi corazón. En este día de tu cumpleaños, quiero decirte que te quiero (y no tiene nada que ver con documentación migratoria de por medio créeme XD) y lo agradecido que estoy por haberte conocido. Eres la planta que purifica el aire que respiro, mi compañera de chismes insanos y el motivo de mis sonrisas más sinceras.
 
-Aunque no soy súper creativo, quise con mis habilidades hacer algo para ti.
-
-Te amo más de lo que las palabras pueden expresar.`;
+Tu forma de ser, tu carácter, tu ternura, tu humor cuestionable y esa chispa única que tienes hacen que cada momento contigo sea especial. Hoy deseo que el mundo te devuelva toda la felicidad que tú das sin medida. Quiero que este nuevo año de vida esté lleno de metas cumplidas, risas interminables y todo lo que te haga feliz. Si me lo permites (y si Susu tampoco me manda Funar) estaré a tu lado, celebrando cada paso de tu camino. Feliz cumpleaños, Linda. Eres y serás mi persona favorita. Que este día esté lleno de sorpresas y de memes, todo lo que mereces.`;
 } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
