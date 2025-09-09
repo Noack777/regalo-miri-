@@ -72,7 +72,7 @@ function showDedicationText() { //seguidores
   if (!text) {
    text = `Miri (UwU)/
 
-Hoy es un día muy especial, porque celebramos el regalo más hermoso ciudad de México me ha dado: Asies, estoy hablando de ti, no te hagas. 
+Hoy es un día muy especial, porque celebramos el regalo más hermoso que ciudad de México me ha dado: Asies, estoy hablando de ti, no te hagas. 
 
 Cada dia que paso contigo es un capítulo nuevo en nuestra historia, lleno de risas, sueños, funas y momentos que atesoro con todo mi corazón. En este día de tu cumpleaños, quiero decirte que te quiero (y no tiene nada que ver con documentación migratoria de por medio créeme XD) y lo agradecido que estoy por haberte conocido. Eres la planta que purifica el aire que respiro, mi compañera de chismes insanos y el motivo de mis sonrisas más sinceras.
 
@@ -108,7 +108,7 @@ function showSignature() {
     dedication.appendChild(signature);
   }
   let firma = getURLParam('firma');
-  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor, tu Baby";
+  signature.textContent = firma ? decodeURIComponent(firma) : "Con cariño, el Noa";
   signature.classList.add('visible');
 }
 
@@ -148,32 +148,6 @@ function startFloatingObjects() {
   spawn();
 }
 
-// Cuenta regresiva o fecha especial
-function showCountdown() {
-  const container = document.getElementById('countdown');
-  let startParam = getURLParam('start');
-  let eventParam = getURLParam('event');
-  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2022-12-26T00:00:00'); 
-  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2025-12-26T00:00:00');
-
-  function update() {
-    const now = new Date();
-    let diff = now - startDate;
-    let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    let eventDiff = eventDate - now;
-    let eventDays = Math.max(0, Math.floor(eventDiff / (1000 * 60 * 60 * 24)));
-    let eventHours = Math.max(0, Math.floor((eventDiff / (1000 * 60 * 60)) % 24));
-    let eventMinutes = Math.max(0, Math.floor((eventDiff / (1000 * 60)) % 60));
-    let eventSeconds = Math.max(0, Math.floor((eventDiff / 1000) % 60));
-
-    container.innerHTML =
-      `Llevamos juntos: <b>${days}</b> días<br>` +
-      `Nuestro aniversario: <b>${eventDays}d ${eventHours}h ${eventMinutes}m ${eventSeconds}s</b>`;
-    container.classList.add('visible');
-  }
-  update();
-  setInterval(update, 1000);
-}
 
 // --- Música de fondo ---
 function playBackgroundMusic() {
