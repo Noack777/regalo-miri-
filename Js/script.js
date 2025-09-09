@@ -76,7 +76,7 @@ Hoy es un día muy especial, porque celebramos el regalo más hermoso que ciudad
 
 Cada dia que paso contigo es un capítulo nuevo en nuestra historia, lleno de risas, sueños, funas y momentos que atesoro con todo mi corazón. En este día de tu cumpleaños, quiero decirte que te quiero (y no tiene nada que ver con documentación migratoria de por medio créeme XD) y lo agradecido que estoy por haberte conocido. Eres la planta que purifica el aire que respiro, mi compañera de chismes insanos y el motivo de mis sonrisas más sinceras.
 
-Tu forma de ser, tu carácter, tu ternura, tu humor cuestionable y esa chispa única que tienes hacen que cada momento contigo sea especial. Hoy deseo que el mundo te devuelva toda la felicidad que tú das sin medida. Quiero que este nuevo año de vida esté lleno de metas cumplidas, risas interminables y todo lo que te haga feliz. Si me lo permites (y si Susu tampoco me manda Funar) estaré a tu lado, celebrando cada paso de tu camino. Feliz cumpleaños, Linda. Eres y serás mi persona favorita. Que este día esté lleno de sorpresas y de memes, todo lo que mereces.`;
+Tu forma de ser, tu carácter, tu ternura, tu humor cuestionable y esa chispa única que tienes hacen que cada momento contigo sea especial. Hoy deseo que el mundo te devuelva toda la felicidad que tú das sin medida. Quiero que este nuevo año de vida esté lleno de metas cumplidas, risas interminables y todo lo que te haga feliz. Si me lo permites (y si Susu tampoco me manda Funar) estaré a tu lado, celebrando cada paso de tu camino. Feliz cumpleaños, Linda.`;
 } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
